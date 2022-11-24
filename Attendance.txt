@@ -1,0 +1,4 @@
+StudentID : 2213110014
+Fullname : Yada Chuenta
+AKA : Mint
+ClassDetail : Section2
