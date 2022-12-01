@@ -1,4 +1,4 @@
-StudentID : 2213110014
-Fullname : Yada Chuenta
-AKA : Mint
-ClassDetail : Section2
+   StudentID: 2213110014
+   Fullname(in English): Yada Chuenta
+   AKA : Mint
+   ClassDetail: Review String & Define Method
