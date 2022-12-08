@@ -1,4 +1,5 @@
+   Date : 08-12-2022
    StudentID: 2213110014
    Fullname(in English): Yada Chuenta
    AKA : Mint
-   ClassDetail: Review String & Define Method
+   ClassDetail: User-Defined Method with String
