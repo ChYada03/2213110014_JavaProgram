@@ -1,5 +1,5 @@
-   Date : 15-12-2022
-   StudentID: 2213110014
-   Fullname(in English): Yada Chuenta
-   AKA : Mint
-   ClassDetail: Array in Java
+Date : 22-12-2022
+StudentID: 2213110014
+Fullname(in English): Yada Chuenta
+AKA : Mint
+ClassDetail:  Class and Object, Array of Object
