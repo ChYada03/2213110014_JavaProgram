@@ -1,0 +1,34 @@
+
+public class Video {
+	private String title;
+	private boolean checkedOut = false;
+	private double averageRating;
+	private int ratingSum = 0;
+	private int ratingCount = 0;
+	
+	 public void setTitle(String _title) {
+		 _title = title;
+	 }
+	 public String getTitle() {
+		 return title;
+	 }
+	 public void addRating(int rate) {
+		 ratingSum +=rate;
+		 ratingCount =1 ;
+		 averageRating = ratingSum/ratingCount;
+	 }
+	 public double getRating() {
+		 return averageRating;
+	 }
+	 public void returnToStore() {
+		 checkedOut = false;
+	 }
+	 public void checkOut() {
+		 checkedOut = true;
+	 }
+	 public boolean ischeckOut() {
+		 return checkedOut;
+	 }
+	 
+
+}
