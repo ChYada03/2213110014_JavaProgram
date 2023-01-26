@@ -1,41 +1,59 @@
 
 public class Student {
+	//private instance variables
 	private String name;
-	private int score;
-
-	public void setName(String Name) {
-		name = Name;
+	private String address;
+	//courses and grade kept 2 parallel arrays
+	private String[] courses;
+	private int[] grades; //[0,100]
+	private int numCourses;
+	private static final int MAX_COURSE = 30 ;
+	
+	//CONSTRUCTOR
+	public Student (String name,String address) {
+		this.name = name;
+		this.address = address;
+		courses = new String[MAX_COURSE];
+		grades = new int[MAX_COURSE];
+		numCourses = 0 ;
 	}
-
+	//setter&getter method(dont have setter for name)
 	public String getName() {
-		return name;
+		return this.name;
 	}
-
-	public void setScore(int Score) {
-		score = Score;
+	public String getAddress() {
+		return this.address;
 	}
-
-	public int getScore() {
-		return score;
+	public void setAddress(String address) {
+		this.address = address;
 	}
-
-	public boolean checkScore() {
-		if (score >= 0 && score <= 100)
-			return true;
-		else
-			return false;
+	public String toString() {
+		return getName()+ " ("+getAddress()+")";
 	}
-
-	public boolean isPass() {
-		if (score >= 50 && score <=100)
-			return true;
-		else
-			return false;
+	
+	/**Add courses and grades**/
+	public void addCourseGrade(String course,int grade) {
+		courses[numCourses] = course;
+		grades[numCourses] = grade;
+		++numCourses;
 	}
-	public String findGrade(int score) {
-		return ((score>=80 && score<=100) ? "A" : (score>=75 && score<=79) ? "B+" 
-			   : (score>=70 && score<=74) ? "B" : (score>=65 && score<=69) ? "C+" 
-			   : (score>=60 && score<=64) ? "C" : (score>=55 && score<=59) ? "D+" 
-			   : (score>=50 && score<=54) ? "D" : "F");
+	
+	/**Prints all courses & grades*/
+	public void printGrade() {
+		System.out.print(name);
+		for(int i = 0;i<numCourses;i++) {
+			System.out.print(" "+courses[i]+":"+grades[i]);	
+		}
+		System.out.println();
 	}
+	
+	/**Computes the average grade*/
+	public double getAverageGrade() {
+		int sum = 0;
+		for(int i = 0;i<numCourses;i++) {
+			sum+=grades[i];
+		}
+		return (double)sum/numCourses;
+	}
+	
 }
