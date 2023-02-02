@@ -13,8 +13,8 @@ public class Point2D {
 	
 	/**Constructor w/ Parameter*/
 	public Point2D(float x,float y) {
-		this.x = 0;
-		this.y = 0;
+		this.x = x;
+		this.y = y;
 	}
 	
 	//Getter&Setter method
