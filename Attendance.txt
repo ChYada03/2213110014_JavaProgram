@@ -1,5 +1,5 @@
-Date : 02-02-2023
+Date : 16-02-2023
 StudentID: 2213110014
 Fullname(in English): Yada Chuenta
 AKA : Mint
-ClassDetail: Inheritance and Polymor
+ClassDetail: File (write/Read)
